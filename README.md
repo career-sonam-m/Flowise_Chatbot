@@ -1,6 +1,6 @@
 # Ornativa Jewels - Flowise RAG Chatbot
 
-A Retrieval-Augmented Generation (RAG) chatbot for **Ornativa Jewels** built visually using **Flowise** and **LangChain**. The chatbot ingests product catalogue data from `Jewellery Details.pdf` to answer customer inquiries, maintain multi-turn conversation memory, and provide grounded product recommendations.
+A Retrieval-Augmented Generation (RAG) chatbot for **Ornativa Jewels** (a fictional jewelry brand) built visually using **Flowise** and **LangChain**. The chatbot ingests product catalogue data from `Jewellery Details.pdf` to answer customer inquiries, maintain multi-turn conversation memory, and provide grounded product recommendations.
 
 - **Live Public Chatbot**: [https://cloud.flowiseai.com/chatbot/5a6f6405-1f10-43e8-b1b4-ac26fc6eb026](https://cloud.flowiseai.com/chatbot/5a6f6405-1f10-43e8-b1b4-ac26fc6eb026)  
   *Fully hosted 24/7 on Flowise Cloud — test the chatbot instantly in your browser on any device without local setup.*
