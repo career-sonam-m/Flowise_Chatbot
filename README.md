@@ -3,9 +3,11 @@
 A Retrieval-Augmented Generation (RAG) chatbot for **Ornativa Jewels** built visually using **Flowise** and **LangChain**. The chatbot ingests product catalogue data from `Jewellery Details.pdf` to answer customer inquiries, maintain multi-turn conversation memory, and provide grounded product recommendations.
 
 - **Live Public Chatbot**: [https://cloud.flowiseai.com/chatbot/5a6f6405-1f10-43e8-b1b4-ac26fc6eb026](https://cloud.flowiseai.com/chatbot/5a6f6405-1f10-43e8-b1b4-ac26fc6eb026)  
-  *Fully hosted 24/7 on Flowise Cloud — accessible instantly from any device without requiring a local Flowise setup or your machine to be powered on.*
+  *Fully hosted 24/7 on Flowise Cloud — test the chatbot instantly in your browser on any device without local setup.*
 - **Live Flowise Canvas**: [https://cloud.flowiseai.com/canvas/5a6f6405-1f10-43e8-b1b4-ac26fc6eb026](https://cloud.flowiseai.com/canvas/5a6f6405-1f10-43e8-b1b4-ac26fc6eb026)  
   *Access the workflow editor canvas on Flowise Cloud to view the live multi-node pipeline and inspect node configurations.*
+
+> **Local Execution**: To set up and run this chatbot flow separately on your local machine, please follow the [Installation & Execution Guide](#installation--execution-guide) below.
 
 ---
 
