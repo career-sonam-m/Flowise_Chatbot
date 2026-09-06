@@ -3,8 +3,8 @@
     {
       "id": "recursiveCharacterTextSplitter_0",
       "position": {
-        "x": -200.1185960322726,
-        "y": -276.24338895735224
+        "x": -329.4205302607197,
+        "y": -45.74863663707697
       },
       "type": "customNode",
       "data": {
@@ -74,12 +74,12 @@
         "selected": false
       },
       "width": 300,
-      "height": 436,
+      "height": 433,
       "selected": false,
       "dragging": false,
       "positionAbsolute": {
-        "x": -200.1185960322726,
-        "y": -276.24338895735224
+        "x": -329.4205302607197,
+        "y": -45.74863663707697
       }
     },
     {
@@ -221,7 +221,7 @@
         "selected": false
       },
       "width": 300,
-      "height": 430,
+      "height": 427,
       "selected": false,
       "dragging": false,
       "positionAbsolute": {
@@ -370,7 +370,7 @@
         "selected": false
       },
       "width": 300,
-      "height": 446,
+      "height": 442,
       "selected": false,
       "dragging": false,
       "positionAbsolute": {
@@ -381,8 +381,8 @@
     {
       "id": "chatOpenAI_0",
       "position": {
-        "x": 809.4149065688224,
-        "y": 275.01651103950365
+        "x": 959.0940821749864,
+        "y": 446.84020817100077
       },
       "type": "customNode",
       "data": {
@@ -652,19 +652,19 @@
         "selected": false
       },
       "width": 300,
-      "height": 676,
+      "height": 674,
       "selected": false,
       "dragging": false,
       "positionAbsolute": {
-        "x": 809.4149065688224,
-        "y": 275.01651103950365
+        "x": 959.0940821749864,
+        "y": 446.84020817100077
       }
     },
     {
       "id": "conversationalRetrievalQAChain_1",
       "position": {
-        "x": 1381.1681784254301,
-        "y": -234.9570773754446
+        "x": 1732.97165677823,
+        "y": -77.05649804952776
       },
       "type": "customNode",
       "data": {
@@ -755,7 +755,7 @@
           "model": "{{chatOpenAI_0.data.instance}}",
           "vectorStoreRetriever": "{{memoryVectorStore_0.data.instance}}",
           "memory": "{{bufferMemory_0.data.instance}}",
-          "returnSourceDocuments": "",
+          "returnSourceDocuments": false,
           "rephrasePrompt": "Given the following conversation and a follow up question, rephrase the follow up question to be a standalone question.\n\nChat History:\n{chat_history}\nFollow Up Input: {question}\nStandalone Question:",
           "responsePrompt": "You are Ornativa's virtual jewellery expert assistant. Be polite, welcoming, concise, and factual.\n- If the user greets you (e.g. \"hi\", \"hello\", \"good morning\"), respond warmly as Ornativa's virtual jewellery expert and offer to assist them with exploring the jewellery catalogue.\n- For product questions, answer accurately using ONLY the provided context.\n- If an item is out of stock in the context, suggest a relevant in-stock alternative product from the catalogue.\n- If the question is unrelated to jewellery or greetings and cannot be answered from context, politely state that you can only answer questions regarding Ornativa's jewellery catalogue.\nContext:\n------------\n{context}\n------------",
           "inputModeration": ""
@@ -773,19 +773,19 @@
         "selected": false
       },
       "width": 300,
-      "height": 538,
+      "height": 535,
       "selected": false,
       "positionAbsolute": {
-        "x": 1381.1681784254301,
-        "y": -234.9570773754446
+        "x": 1732.97165677823,
+        "y": -77.05649804952776
       },
       "dragging": false
     },
     {
       "id": "bufferMemory_0",
       "position": {
-        "x": 995.5070952658039,
-        "y": -614.6242396799544
+        "x": 1628.9084779567004,
+        "y": -652.7954623222369
       },
       "type": "customNode",
       "data": {
@@ -841,19 +841,19 @@
         "selected": false
       },
       "width": 300,
-      "height": 259,
+      "height": 256,
       "selected": false,
       "dragging": false,
       "positionAbsolute": {
-        "x": 995.5070952658039,
-        "y": -614.6242396799544
+        "x": 1628.9084779567004,
+        "y": -652.7954623222369
       }
     },
     {
       "id": "memoryVectorStore_0",
       "position": {
-        "x": 711.1887215558254,
-        "y": -236.7650740429822
+        "x": 858.8118979645765,
+        "y": -93.98200177878041
       },
       "type": "customNode",
       "data": {
@@ -937,12 +937,12 @@
         "selected": false
       },
       "width": 300,
-      "height": 413,
+      "height": 411,
       "selected": false,
       "dragging": false,
       "positionAbsolute": {
-        "x": 711.1887215558254,
-        "y": -236.7650740429822
+        "x": 858.8118979645765,
+        "y": -93.98200177878041
       }
     }
   ],
