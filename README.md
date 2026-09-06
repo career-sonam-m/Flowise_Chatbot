@@ -2,6 +2,11 @@
 
 A Retrieval-Augmented Generation (RAG) chatbot for **Ornativa Jewels** built visually using **Flowise** and **LangChain**. The chatbot ingests product catalogue data from `Jewellery Details.pdf` to answer customer inquiries, maintain multi-turn conversation memory, and provide grounded product recommendations.
 
+- **Live Public Chatbot**: [https://cloud.flowiseai.com/chatbot/5a6f6405-1f10-43e8-b1b4-ac26fc6eb026](https://cloud.flowiseai.com/chatbot/5a6f6405-1f10-43e8-b1b4-ac26fc6eb026)  
+  *Fully hosted 24/7 on Flowise Cloud — accessible instantly from any device without requiring a local Flowise setup or your machine to be powered on.*
+- **Live Flowise Canvas**: [https://cloud.flowiseai.com/canvas/5a6f6405-1f10-43e8-b1b4-ac26fc6eb026](https://cloud.flowiseai.com/canvas/5a6f6405-1f10-43e8-b1b4-ac26fc6eb026)  
+  *Access the workflow editor canvas on Flowise Cloud to view the live multi-node pipeline and inspect node configurations.*
+
 ---
 
 ## What is Flowise?
@@ -41,8 +46,13 @@ User Query ──> Conversational QA Chain ──> In-Memory Vector Store (Top 4
 
 ## Prompt & Out-of-Stock Handling
 
-### System Prompt
-> *"You are Ornativa's virtual jewellery expert. Be polite, concise, and factual. Use the catalogue data to answer questions accurately. If an item is out of stock, suggest a relevant alternative product from the catalogue."*
+### System Prompt (Response Prompt)
+> *"You are Ornativa's virtual jewellery expert assistant. Be polite, welcoming, concise, and factual.*
+> 
+> *- If the user greets you (e.g. "hi", "hello", "good morning"), respond warmly as Ornativa's virtual jewellery expert and offer to assist them with exploring the jewellery catalogue.*
+> *- For product questions, answer accurately using ONLY the provided context.*
+> *- If an item is out of stock in the context, suggest a relevant in-stock alternative product from the catalogue.*
+> *- If the question is unrelated to jewellery or greetings and cannot be answered from context, politely state that you can only answer questions regarding Ornativa's jewellery catalogue."*
 
 ### Out-of-Stock Strategy
 If a customer inquires about an item marked out-of-stock in `Jewellery Details.pdf`:
@@ -137,7 +147,7 @@ To execute this project in Flowise, load the pre-configured workflow JSON file (
    - Click on the **Conversational Retrieval QA Chain** node on the canvas.
    - Click **Additional Parameters** at the bottom of the node (if collapsed).
    - Enter your prompt into the **Response Prompt** field:
-     > *"You are Ornativa's virtual jewellery expert. Be polite, concise, and factual. Use the catalogue data to answer questions accurately. If an item is out of stock, suggest a relevant alternative product from the catalogue."*
+     > *"You are Ornativa's virtual jewellery expert assistant. Be polite, welcoming, concise, and factual. Handle greetings warmly, answer product questions accurately using context, and suggest in-stock alternatives for unavailable items."*
    - *(Note: When importing `Ornativa Jewels Chatbot Chatflow.json`, this Response Prompt comes pre-configured inside the node.)*
 
 ### Step 6: Upload the Product PDF
